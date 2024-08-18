@@ -197,7 +197,7 @@ namespace Cainos.LucidEditor
             position.xMin += EditorGUIUtility.labelWidth;
 
             GUIContent buttonLabel = EditorIcons.CsScriptIcon;
-            buttonLabel.text = (property.serializedProperty.managedReferenceValue == null ? "Null" : property.serializedProperty.managedReferenceValue.GetType().Name) +
+            buttonLabel.text = property.serializedProperty.managedReferenceFullTypename +
                 $" ({GetManagedReferenceFieldTypeName(property.serializedProperty)})";
 
             if (GUI.Button(position, buttonLabel, EditorStyles.objectField))
