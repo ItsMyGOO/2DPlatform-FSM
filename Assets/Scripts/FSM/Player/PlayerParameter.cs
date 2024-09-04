@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 
+[Serializable]
 public class PlayerParameter : Parameter
 {
     [Header("移动")]
