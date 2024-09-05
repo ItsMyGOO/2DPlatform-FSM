@@ -9,7 +9,7 @@ public enum StateType
     Death,//死亡
     Jump,//跳跃
     Fall, //下落
-    Land,//落地
+    //Land,//落地
     WallSlide,//墙壁滑行
     WallJump, //蹬墙跳
     WallJumpFall, //蹬墙跳下落状态

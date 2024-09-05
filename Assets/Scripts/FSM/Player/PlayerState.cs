@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class PlayerState : IState
 {
-    protected PlayerFSM fsm;
+    protected PlayerFSM manager;
     protected PlayerParameter parameter;
     protected string animationName;
     protected AnimatorStateInfo animatorStateInfo;   // 动画状态信息
@@ -15,7 +15,7 @@ public class PlayerState : IState
 
     public PlayerState(PlayerFSM fsm, string animationName)
     {
-        this.fsm = fsm;
+        this.manager = fsm;
         this.parameter = fsm.parameter;
         this.animationName = animationName;
     }
@@ -57,7 +57,7 @@ public class PlayerState : IState
         SetVelocity(parameter.inputDirection.x * parameter.currentSpeed, parameter.rb.velocity.y);
 
         //翻转
-        fsm.FlipTo();
+        manager.FlipTo();
     }
 
     //设置速度

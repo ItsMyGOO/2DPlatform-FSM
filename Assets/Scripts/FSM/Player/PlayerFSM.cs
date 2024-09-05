@@ -14,11 +14,10 @@ public class PlayerFSM : FSM
         parameter.Gravity = parameter.rb.gravityScale;
 
         // 初始化各个状态，并添加到状态字典中
-        //states.Add(StateType.Idle, new PlayerIdleState(this, "Idle"));
-        //states.Add(StateType.Move, new PlayerMoveState(this, "Run"));
-        //states.Add(StateType.Jump, new PlayerJumpState(this, "Jump"));
-        //states.Add(StateType.Fall, new PlayerFallState(this, "Fall"));
-        //states.Add(StateType.Land, new PlayerLandState(this, "Land"));
+        states.Add(StateType.Idle, new PlayerIdleState(this, "idle"));
+        states.Add(StateType.Move, new PlayerMoveState(this, "run"));
+        states.Add(StateType.Jump, new PlayerJumpState(this, "jump"));
+        states.Add(StateType.Fall, new PlayerFallState(this, "fall"));
         //states.Add(StateType.WallSlide, new PlayerWallSlideState(this, "WallSlide"));
         //states.Add(StateType.WallJump, new PlayerWallJumpState(this, "Jump"));
         //states.Add(StateType.WallJumpFall, new PlayerWallJumpFallState(this, "Fall"));
@@ -27,7 +26,7 @@ public class PlayerFSM : FSM
         //states.Add(StateType.Dash, new PlayerDashState(this, "Dash"));
         //states.Add(StateType.ClimbBegin, new PlayerClimbBeginState(this, "ClimbBegin"));
         //states.Add(StateType.Climbing, new PlayerClimbingState(this, "Climbing"));
-        //states.Add(StateType.CoyoteTime, new PlayerCoyoteTimeState(this, "Run"));
+        states.Add(StateType.CoyoteTime, new PlayerCoyoteTimeState(this, "fall"));
 
         base.Awake();
     }
