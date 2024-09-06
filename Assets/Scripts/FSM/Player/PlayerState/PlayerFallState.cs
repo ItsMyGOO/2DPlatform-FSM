@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class PlayerFallState : PlayerState
 {
     public PlayerFallState(PlayerFSM manager, string animationName) : base(manager, animationName) { }

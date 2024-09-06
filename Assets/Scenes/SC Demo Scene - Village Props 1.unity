@@ -8964,7 +8964,7 @@ Transform:
   m_GameObject: {fileID: 297131980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.274, y: 0.616, z: 0}
+  m_LocalPosition: {x: 0.237, y: 0.616, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12588,7 +12588,7 @@ Transform:
   m_GameObject: {fileID: 614614912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.44, y: -2.37, z: 0}
+  m_LocalPosition: {x: -72.516, y: -19.488, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12661,7 +12661,7 @@ MonoBehaviour:
     wallJumpForce: 0
     attackMovePostion: {x: 0, y: 0}
     isClickMeleeAttack: 0
-    dashPostion: {x: 0, y: 0}
+    dashPostion: {x: 5, y: 0}
     dashTime: 0.5
     dashCD: 1
     shadowPrefab: {fileID: 0}
@@ -12727,13 +12727,13 @@ MonoBehaviour:
     m_Bits: 1
   isTouchGround: 0
   wallCheckPoint: {fileID: 297131981}
-  wallCheckLength: 0.05
+  wallCheckLength: 0.1
   wallLayer:
     serializedVersion: 2
     m_Bits: 1
   isTouchWall: 0
   climbCheckPoint: {fileID: 1748519396}
-  climbCheckLength: 0.06
+  climbCheckLength: 0.1
   isCheckClimb: 0
 --- !u!4 &620119867 stripped
 Transform:
@@ -25523,7 +25523,7 @@ Transform:
   m_GameObject: {fileID: 1748519395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.275, y: 0.696, z: 0}
+  m_LocalPosition: {x: 0.23799744, y: 0.696, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28200,7 +28200,7 @@ Transform:
   m_GameObject: {fileID: 1994071273}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.44, y: -2.37, z: -10}
+  m_LocalPosition: {x: -72.516, y: -19.488, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29904,7 +29904,7 @@ Transform:
   m_GameObject: {fileID: 2144174371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.44, y: -2.37, z: -10}
+  m_LocalPosition: {x: -72.516, y: -19.488, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
