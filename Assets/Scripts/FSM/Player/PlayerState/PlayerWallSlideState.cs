@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class PlayerWallSlideState : PlayerState
 {
     public PlayerWallSlideState(PlayerFSM manager, string animationName) : base(manager, animationName) { }
@@ -28,9 +24,9 @@ public class PlayerWallSlideState : PlayerState
         {
             manager.TransitionState(StateType.WallJump);
         }
-        if (!parameter.isWallSlide)
+        if (!parameter.check.isTouchWall)
         {
-            manager.TransitionState(StateType.Fall);
+            manager.TransitionState(StateType.WallJumpFall);
         }
     }
 

@@ -19,13 +19,13 @@ public class PlayerFSM : FSM
         states.Add(StateType.Jump, new PlayerJumpState(this, "jump"));
         states.Add(StateType.Fall, new PlayerFallState(this, "fall"));
         states.Add(StateType.WallSlide, new PlayerWallSlideState(this, "wallSlide"));
-        //states.Add(StateType.WallJump, new PlayerWallJumpState(this, "Jump"));
-        //states.Add(StateType.WallJumpFall, new PlayerWallJumpFallState(this, "Fall"));
-        //states.Add(StateType.MeleeAttack1, new PlayerMeleeAttack1State(this, "MeleeAttack1"));
-        //states.Add(StateType.MeleeAttack2, new PlayerMeleeAttack2State(this, "MeleeAttack2"));
+        states.Add(StateType.WallJump, new PlayerWallJumpState(this, "jump"));
+        states.Add(StateType.WallJumpFall, new PlayerWallJumpFallState(this, "fall"));
+        states.Add(StateType.MeleeAttack1, new PlayerMeleeAttack1State(this, "meleeAttack1"));
+        states.Add(StateType.MeleeAttack2, new PlayerMeleeAttack2State(this, "meleeAttack2"));
         states.Add(StateType.Dash, new PlayerDashState(this, "dash"));
-        //states.Add(StateType.ClimbBegin, new PlayerClimbBeginState(this, "ClimbBegin"));
-        //states.Add(StateType.Climbing, new PlayerClimbingState(this, "Climbing"));
+        states.Add(StateType.ClimbBegin, new PlayerClimbBeginState(this, "climbBegin"));
+        states.Add(StateType.Climbing, new PlayerClimbingState(this, "climbing"));
         states.Add(StateType.CoyoteTime, new PlayerCoyoteTimeState(this, "fall"));
 
         base.Awake();
